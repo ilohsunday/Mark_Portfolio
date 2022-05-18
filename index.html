@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>About James Mark</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="bootstrap.css" type="text/css" media="all" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <style type="text/css" media="all">
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body{
+                background: #191a1c;
+                color: #ffffff;
+            }
+            
+            a{
+                text-decoration: none;
+            }
+            
+            li{
+                list-style: none;
+            }
+            
+            button{
+                padding: 15px 9px;
+                background: #191a1c;
+                color: #ffffff;
+                border-radius: 5px;
+                border: 1px #3f3f3f solid;
+                outline: none;
+                font-weight: 200;
+            }
+            
+            button:hover{
+                background: #3f3f3f;
+                color: #191a1c;
+                font-weight: bold;
+            }
+            
+            button:active{
+                color: #a03b41;
+            }
+            
+            .navbar{
+                display: flex;
+                padding: 20px 20px;
+                background: #ffffff;
+                color: #191a1c;
+                margin-bottom: 20px;
+                align-items: center;
+            }
+            
+            .navbar h1{
+                font-family: 'Dancing Script', cursive;
+            }
+            
+            .navbar ul{
+                display: absolute;
+                bottom: 0;
+            }
+            
+            .navbar ul li{
+                display: inline;
+                color: #191a1c;
+                list-style: none;
+                padding: 5px 10px;
+                border-radius: 12px;
+            }
+            
+            .navbar ul li:hover{
+                background: #191a1c;
+                color: #ffffff;
+            }
+            
+            /* About */
+            section{
+                padding: 5px 20px;
+                margin-bottom: 100px;
+            }
+            
+            .about-content{
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            
+            #about-content img{
+                height: 75vh;
+                margin-right: 15px;
+            }
+            
+            #about-writeup{
+                width: 30%;
+                margin: auto 15px;
+            }
+            
+            #skill{
+                margin-top: 40px;
+            }
+            
+            .skill label{
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            
+            .skill p{
+                margin-left: 10px;
+                font-weight: lighter;
+            }
+            
+            .skill .product-length{
+                background: #3f3f3f;
+                height: 5px;
+                width: 100%;
+                display: block;
+            }
+            
+            
+            
+            .skill .product-length::before{
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 20%;
+                display: block;
+                background: #a03b41;
+                animation: product-length 6s ease;
+            }
+            
+            @keyframes product-length{
+                0%{
+                    width: 0%;
+                }
+                50%{
+                    width: 26.2%;
+                }
+                70%{
+                    width: 20%;
+                    animation-duration: 50s;
+                }
+            }
+            
+            .skill .ui-length{
+                background: #3f3f3f;
+                height: 5px;
+                width: 100%;
+                display: block;
+            }
+            
+            
+            
+            .skill .ui-length::before{
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 15%;
+                display: block;
+                background: #a03b41;
+                animation: ui-length 6s ease;
+            }
+            
+            @keyframes ui-length{
+                0%{
+                    width: 0%;
+                }
+                50%{
+                    width: 26.2%;
+                }
+                70%{
+                    width: 15%;
+                    animation-duration: 50s;
+                }
+            }
+            
+            .skill .mobile-length{
+                background: #3f3f3f;
+                height: 5px;
+                width: 100%;
+                display: block;
+            }
+            
+            
+            
+            .skill .mobile-length::before{
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 23%;
+                display: block;
+                background: #a03b41;
+                animation: mobile-length 6s ease;
+            }
+            
+            @keyframes mobile-length{
+                0%{
+                    width: 0%;
+                }
+                50%{
+                    width: 26.2%;
+                }
+                70%{
+                    width: 23%;
+                    animation-duration: 50s;
+                }
+            }
+            
+            .skill .web-length{
+                background: #3f3f3f;
+                height: 5px;
+                width: 100%;
+                display: block;
+            }
+            
+            
+            
+            .skill .web-length::before{
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 26.2%;
+                display: block;
+                background: #a03b41;
+                animation: web-length 6s ease;
+            }
+            
+            @keyframes web-length{
+                0%{
+                    width: 0%;
+                }
+                50%{
+                    width: 26.2%;
+                }
+                70%{
+                    width: 26.2%;
+                    animation-duration: 50s;
+                }
+            }
+            
+            .skill .smm-length{
+                background: #3f3f3f;
+                height: 5px;
+                width: 100%;
+                display: block;
+            }
+            
+            
+            
+            .skill .smm-length::before{
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 24.9%;
+                display: block;
+                background: #a03b41;
+                animation: smm-length 6s ease;
+            }
+            
+            @keyframes smm-length{
+                0%{
+                    width: 0%;
+                }
+                50%{
+                    width: 26.2%;
+                }
+                70%{
+                    width: 24.9%;
+                    animation-duration: 50s;
+                }
+            }
+            
+             
+            
+            /*project*/
+            
+            #project{
+                padding: 50px 20px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+                margin: 0 100px 100px 100px;
+            }
+            
+            .project-head{
+                display: flex;
+                padding: 0 20px;
+                justify-content: space-between;
+                margin-bottom: 50px;
+            }
+            
+            .project-head button span{
+                font-weight: bold;
+            }
+            
+            button:hover{
+                background: #3f3f3f;
+                color: #191a1c;
+            }
+            
+            button:active{
+                color: #a03b41;
+            }
+            
+            .project_img1{
+                display: flex;
+                justify-content: center;
+                transition: 2s;
+            }
+            
+            .project_img1 img{
+                width: 35vw;
+                height: 35vh;
+                margin: 10px 10px;
+                transform: scale(0.1);
+                opacity: 0;
+                transition: 1s ease-in-out;
+            }
+            
+            .project_img1 img.active{
+                opacity: 1;
+                transform: scale(1);
+            }
+            
+            .project_img2{
+                display: flex;
+                justify-content: center;
+            }
+            
+            .project_img2 img{
+                width: 22vw;
+                height: 30vh;
+                margin: 10px 10px;
+                transform: scale(0.1);
+                opacity: 0;
+                transition: 1s ease-in-out;
+            }
+            
+            .project_img2 img.active{
+                transform: scale(1);
+                opacity: 1;
+            }
+            
+            /*resume*/
+            
+            .resume{
+                display: flex;
+                margin-top: 50px;
+                padding: 0 100px;
+            }
+            
+            .resume-content{
+                background: #121212;
+                margin: 0 20px;
+                padding: 30px 20px;
+                height: 60vh;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .resume  .first{
+                border-top: 2px #c71800 solid;
+            }
+            
+            .resume .first span{
+                height: 2px;
+                width: 40%;
+                background: #c71800;
+                display: block;
+            }
+            
+            .resume .second{
+                border-top: yellow 2px solid;
+                margin-top: 20px;
+                background: #262626;
+            }
+            
+            .resume .second span{
+                height: 2px;
+                width: 40%;
+                background: yellow;
+                display: block;
+            }
+            
+            .resume .third{
+                border-top: 2px #00b5ff solid;
+            }
+            
+            .resume .third span{
+                height: 2px;
+                width: 40%;
+                background: #00b5ff;
+                display: block;
+            }
+            
+            .resume-content > p,
+            .resume-content span,
+            .resume-content div{
+                margin-top: 20px;
+            }
+            
+            /* teammate */
+            
+            .teammate-content{
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .teammate-content > div{
+                background: #121212;
+                margin: 0 20px;
+                width: 25%;
+                height: 63vh;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+                font-size: 13px;
+            }
+            
+            .teammate-content h4,
+            .teammate-content p{
+                margin-left: 10px;
+            }
+            
+            .teammate-content h4{
+                font-size: 18px;
+            }
+            
+            .teammate-content img{
+                margin-bottom: 30px;
+                width: 100%;
+                height: 75%;
+            }
+            
+            .teammate-content .center{
+                margin-top: 20px;
+                background: #262626;
+            }
+            
+            /* blog */
+            .blog-content{
+                display: flex;
+                margin-top: 50px;
+                justify-content: center;
+            }
+            
+            .blog-content > div{
+                width: 25%;
+                height: 50%;
+                margin: 0 20px;
+                background: #121212;
+                height: 40vh;
+                font-size: 13px;
+                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .blog-content > div img{
+                width: 100%;
+                height: 25vh;
+                margin-bottom: 20px;
+            }
+            
+            .blog-content h4,
+            .blog-content p{
+                margin-left: 10px;
+            }
+            
+            .blog-content h4{
+                font-size: 18px;
+            }
+            
+            .blog-content .center{
+                margin-top: 20px;
+                background: #262626;
+            }
+            
+            /* contact */
+            
+            .contact-content{
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            
+           /* .contact-content div{
+                margin: 0 20px;
+            }*/
+            
+            .contact_info{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+                text-align: center;
+                padding: 60px 80px 0 80px;
+                margin: 0 30px;
+            }
+            
+            .contact_info > div{
+                margin: 2px 0 30px 0;
+            }
+            
+            .contact_info > div p{
+                margin-bottom: -1px;
+                color: orange;
+                font-weight: 250;
+            }
+            
+            .contact-form{
+                margin: 0 30px;
+                display: flex;
+                flex-direction: column;
+                padding: 30px 0;
+            }
+            
+            .contact-form > div{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .contact-form input{
+                margin-bottom: 30px;
+                padding: 15px 5px;
+                width: 27%;
+                text-align: center;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+                background: #191a1c;
+                color: rgb(225,225,225);
+                border: none;
+                outline: none;
+            }
+            
+            .contact-form input:hover{
+                background: #121212;
+            }
+            
+            .contact-form textarea{
+                background: #191a1c;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+                border: none;
+                outline: none;
+                text-align: center;
+                min-height: 150px;
+                max-height: 150px;
+                margin-bottom: 30px;
+                color: rgb(225,225,225);
+            }
+            
+            .contact-form textarea:hover{
+                background: #121212;
+            }
+            
+            .contact-form .submit{
+                width: 50%;
+                border: none;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+                
+            }
+            
+            .social{
+                display: flex;
+                margin-top: 90px;
+                justify-content: center;
+            }
+            
+            .social a{
+                padding:10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+                margin: 0 20px;
+            }
+            
+            .social a:hover{
+                background: #121212;
+            }
+            
+            .social a img{
+                width: 50px;
+            }
+            
+            /* responsive */
+            
+            @media(max-width:991px){
+                
+                .navbar h1{
+                    font-size: 60px;
+                    font-weight: 500;
+                }
+                
+                .navbar ul{
+                    margin: 0 auto;
+                    font-weight: 500;
+                }
+                
+                .navbar ul li{
+                    font-size: 35px;
+                }
+                
+                section h3{
+                    font-size: 40px;
+                }
+                .about-content{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                #about-content img{
+                    height: 40vh;
+                    margin-bottom: 20px;
+                }
+                
+                #about-writeup{
+                    width: 70%;;
+                }
+                
+                #about-writeup h3{
+                    font-size: 40px;
+                }
+                
+                #about-writeup > p{
+                    font-size: 35px;
+                }
+                
+                #skill{
+                    margin-top: 40px;
+                }
+                
+                .skill label{
+                    font-size: 28px;
+                }
+                
+                .skill p{
+                    font-size: 28px;
+                }
+                
+                .skill .product-length::before{
+                    width: 50%;
+                    animation: product-length 6s ease;
+                }
+                
+                @keyframes product-length{
+                    0%{
+                        width: 0%;
+                    }
+                    50%{
+                        width: 61%;
+                    }
+                    70%{
+                        width: 50%;
+                    }
+                }
+                
+                .skill .ui-length::before{
+                    width: 35%;
+                    animation: ui-length 6s ease;
+                }
+                
+                @keyframes ui-length{
+                    0%{
+                        width: 0%;
+                    }
+                    50%{
+                        width: 61%;
+                    }
+                    70%{
+                        width: 35%;
+                        animation-duration: 50s;
+                    }
+                }
+                
+                .skill .mobile-length::before{
+                    width: 55%;
+                    animation: mobile-length 6s ease;
+                }
+                
+                @keyframes mobile-length{
+                    0%{
+                        width: 0%;
+                    }
+                    50%{
+                        width: 61%;
+                    }
+                    70%{
+                        width: 55%;
+                    }
+                }
+                
+                .skill .web-length::before{
+                    width: 60%;
+                }
+                
+                @keyframes web-length{
+                    0%{
+                        width: 0%;
+                    }
+                    50%{
+                        width: 61%;
+                    }
+                    70%{
+                        width: 61%;
+                    }
+                }
+                
+                .skill .smm-length::before{
+                    width: 58%;
+                    animation: smm-length 6s ease;
+                }
+                
+                @keyframes smm-length{
+                    0%{
+                        width: 0%;
+                    }
+                    50%{
+                        width: 61%;
+                    }
+                    70%{
+                        width: 57%;
+                    }
+                }
+                
+                #about-writeup button{
+                    font-size: 30px;
+                }
+                
+                .project-head{
+                    align-items: center;
+                }
+                
+                .project-head h3{
+                    font-size: 40px;
+                }
+                
+                .project-head button{
+                    font-size: 30px;
+                }
+                
+                .project_img1{
+                    flex-direction: column;
+                    margin-right: 15px;
+                }
+                
+                .project_img1 img{
+                    width: 100%;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                
+                .project_img2{
+                    flex-direction: column;
+                    margin-right: 15px;
+                }
+                
+                .project_img2 img{
+                    width: 100%;
+                    height: 40vh;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                
+                /*resume*/
+                
+                .resume{
+                    flex-direction: column;
+                }
+                
+                .resume-content{
+                    margin: 0 0 40px 0;
+                    height: 30vh;
+                    font-size: 35px;
+                }
+                
+                .resume .second{
+                    margin-top: 0;
+                }
+                
+                .resume-content h4 {
+                    font-size: 27px;
+                }
+                
+                /* teammate */
+                
+                .teammate-content{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .teammate-content > div{
+                    margin: 0 0 40px 0;
+                    width: 52%;
+                    height: 40vh;
+                    font-size: 30px;
+                }
+                
+                .teammate-content h4{
+                    font-size: 25px;
+                }
+                
+                .teammate-content img{
+                    margin-bottom: 30px;
+                    width: 100%;
+                    height: 75%;
+                }
+                
+                .teammate-content .center{
+                    margin-top: 0;
+                }
+                
+                /* blog */
+                .blog-content{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .blog-content > div{
+                    width: 70%;
+                    margin-top: 40px;
+                    height: 37vh;
+                    font-size: 30px;
+                }
+                
+                .blog-content h4,
+                .blog-content p{
+                    margin-left: 20px;
+                }
+                
+                .blog-content h4{
+                    font-size: 35px;
+                }
+                
+                .blog-content .center{
+                    margin-top: 40px;
+                }
+                
+                /* contact */
+                
+                .contact-content{
+                    flex-direction: column;
+                }
+                
+                .contact_info{
+                    padding: 100px 80px 100px 80px;
+                    font-size: 40px;
+                }
+                
+                .contact_info h5{
+                    font-size: 30px;
+                }
+                
+                .contact_info div:nth-child(2),
+                .contact_info div:nth-child(4){
+                    margin-bottom: 80px;
+                }
+                
+                .contact-form > div{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .contact-form input{
+                    width: 100%;
+                    font-size: 40px;
+                }
+                
+                .contact-form textarea{
+                    font-size: 40px;
+                    min-height: 30vh;
+                }
+                
+                .contact-form .submit{
+                    margin: 0 auto;
+                    font-size: 35px;
+                }
+                
+                .social a img{
+                    width: 70px;
+                }
+            }
+            
+            /* 320px Responsive */
+            
+            @media(max-width:360px){
+                .navbar{
+                    padding: ;
+                }
+                
+                .navbar h1{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                
+                .navbar ul{
+                    padding: 0;
+                }
+                
+                .navbar ul li{
+                    font-size: 12px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    font-weight: 500;
+                    border-radius: 1px;
+                }
+                
+                section h3{
+                    font-size: 20px;
+                }
+                
+                #about-writeup h3{
+                    font-size: 15px;
+                }
+                
+                #about-writeup > p{
+                    font-size: 13px;
+                }
+                
+                .skill label{
+                    font-size: 13px;
+                }
+                
+                .skill p{
+                    font-size: 13px;
+                }
+                
+                .skill .product-length::before{
+                    width: 43%;
+                    animation: product-length 6s ease;
+                }
+                
+                @keyframes product-length{
+                    0%{
+                        width: 0%;
+                    }
+                    50%{
+                        width: 52.8%;
+                    }
+                    70%{
+                        width: 43%;
+                    }
+                }
+                
+                .skill .ui-length::before{
+                    width: 29.7%;
+                    animation: ui-length 6s ease;
+                }
+                
+                @keyframes ui-length{
+                    0%{
+                        width: 0%;
+                    }
+                    50%{
+                        width: 52.8%;
+                    }
+                    70%{
+                        width: 29.7%;
+                        animation-duration: 50s;
+                    }
+                }
+                
+                .skill .mobile-length::before{
+                    width: 47%;
+                    animation: mobile-length 6s ease;
+                }
+                
+                @keyframes mobile-length{
+                    0%{
+                        width: 0%;
+                    }
+                    50%{
+                        width: 52.8%;
+                    }
+                    70%{
+                        width: 47%;
+                    }
+                }
+                
+                .skill .web-length::before{
+                    width: 52.8%;
+                }
+                
+                @keyframes web-length{
+                    0%{
+                        width: 0%;
+                    }
+                    50%{
+                        width: 52.8%;
+                    }
+                    70%{
+                        width: 52.8%;
+                    }
+                }
+                
+                .skill .smm-length::before{
+                    width: 50%;
+                    animation: smm-length 6s ease;
+                }
+                
+                @keyframes smm-length{
+                    0%{
+                        width: 0%;
+                    }
+                    50%{
+                        width: 52.8%;
+                    }
+                    70%{
+                        width: 50%;
+                    }
+                }
+                
+                #about-writeup button{
+                    font-size: 13px;
+                }
+                
+                #project{
+                    margin: 25px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+                }
+                
+                .project-head{
+                    align-items: center;
+                }
+                
+                .project-head h3{
+                    font-size: 10px;
+                }
+                
+                .project-head button{
+                    font-size: 10px;
+                }
+                
+                .project_img1{
+                    flex-direction: column;
+                    margin-right: 15px;
+                }
+                
+                .project_img1 img{
+                    width: 100%;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                
+                .project_img2{
+                    flex-direction: column;
+                    margin-right: 15px;
+                }
+                
+                .project_img2 img{
+                    width: 100%;
+                    height: 40vh;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                
+                /*resume*/
+                
+                .resume{
+                    padding: 0;
+                }
+                
+                .resume-content{
+                    height: 48vh;
+                    font-size: 15px;
+                }
+                
+                .resume-content h4 {
+                    font-size: 10px;
+                }
+                
+                /* teammate */
+                
+                .teammate-content > div{
+                    width: 60%;
+                    height: 45vh;
+                    font-size: 10px;
+                }
+                
+                .teammate-content h4{
+                    font-size: 15px;
+                }
+                
+                .teammate-content img{
+                    margin-bottom: 15px;
+                }
+                
+                /* blog */
+                
+                .blog-content > div{
+                    height: 40vh;
+                    font-size: 10px;
+                }
+                
+                .blog-content h4,
+                .blog-content p{
+                    margin-left: 7px;
+                }
+                
+                .blog-content h4{
+                    font-size: 15px;
+                }
+                
+                /* contact */
+                
+                .contact_info{
+                    padding: 40px 30px 40px 30px;
+                    font-size: 15px;
+                }
+                
+                .contact_info h5{
+                    font-size: 15px;
+                }
+                
+                .contact_info div:nth-child(2),
+                .contact_info div:nth-child(4){
+                    margin-bottom: 40px;
+                }
+                
+                .contact-form > div{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .contact-form input{
+                    width: 100%;
+                    font-size: 15px;
+                }
+                
+                .contact-form textarea{
+                    font-size: 15px;
+                    min-height: 30vh;
+                }
+                
+                .contact-form .submit{
+                    margin: 0 auto;
+                    font-size: 10px;
+                }
+                
+                .social{
+                    margin-top: 20px;
+                }
+                
+                .social a{
+                    padding: 3px;
+                }
+                
+                .social a img{
+                    width: 40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+            <nav class="navbar">
+                <h1>My Portfolio</h1>
+                <ul class="fs-4">
+                    <a href="index.html"><li>About</li></a>
+                    <a href="#project"><li>Project</li></a>
+                    <a href="#resume"><li>Result</li></a>
+                    <a href="#teammate"><li>Teammate</li></a>
+                    <a href="#blog"><li>Blog</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </nav>
+            
+            <section id="about">
+                <h3 class="">About Me</h3>
+                <div id="about-content" class="about-content">
+                    <!--<div id="about-img">-->
+                        <img class="" src="james_mark.jpg" alt="" />
+                    <!--</div>-->
+                    <div id="about-writeup">
+                        <h3>Hello, i am  James Mark</h3>
+                        <p>Am an IT expect. a web developer, a graphic designer, and a social media manager. i've being in this field for 5 years with so many successful projects.</p>
+                        <div id="skill">
+                            <div class="skill">
+                                <label>Product Design</label>
+                                <div class="length d-flex"><div class="product-length">
+                                </div>
+                                <p>75%</p></div>
+                            </div>
+                            <div class="skill">
+                                <label>UI/UX Design</label>
+                                <div class="length d-flex"><div class="ui-length">
+                                </div>
+                                <p>55%</p></div>
+                            </div>
+                            <div class="skill">
+                                <label>Mobile Design</label>
+                                <div class="length d-flex"><div class="mobile-length">
+                                </div>
+                                <p>85%</p></div>
+                            </div>
+                             <div class="skill">
+                                <label>Website Design</label>
+                                <div class="length d-flex"><div class="web-length">
+                                </div>
+                                <p>100%</p></div>
+                            </div>
+                            <div class="skill">
+                                <label>Social Media Management</label>
+                                <div class="length d-flex"><div class="smm-length">
+                                </div>
+                                <p>95%</p></div>
+                            </div>
+                        </div>
+                        <button>Hire me</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="project">
+                <div class="project-head">
+                    <h3>Project</h3>
+                    <button>All Project <span>>></span></button>
+                </div>
+                <div>
+                    <div class="project_img1">
+                        <div class="first">
+                        <img src="ui_ux_design.jpg" alt=""/></div>
+                        <img src="product_design.jpg" alt="" />
+                    </div>
+                    <div class="project_img2">
+                        <img src="graphic_design.jpg" alt="" />
+                        <img src="web_design(1).jpg" alt="" />
+                        <img src="logo_design.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
+            
+            <section id="resume">
+                <h3>Resume</h3>
+                <div class="resume">
+                    <div class="resume-content first">
+                        <h4>Experience</h4>
+                        <p>If i broke na my business, as of now, i lack inspiration, but nevertheless, this is just a website for testing my skill</p>
+                        <span></span>
+                        <div>
+                            <h4>Photo Agency Shutter</h4>
+                            <p>Photographer-intern 2020-2021</p>
+                        </div>
+                        <div>
+                            <h4>Photo Agency Shutter</h4>
+                            <p>Photographer-intern 2020-2021</p>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-content second">
+                        <h4>Education</h4>
+                        <p>If i broke na my business, as of now, i lack inspiration, but nevertheless, this is just a website for testing my skill</p>
+                        <span></span>
+                        <div>
+                            <h4>Computer School</h4>
+                            <p>IT-intern 2020-2021</p>
+                        </div>
+                        <div>
+                            <h4>Computer University</h4>
+                            <p>Dspg</p>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-content third">
+                        <h4>Equipment</h4>
+                        <p>If i broke na my business, as of now, i lack inspiration, but nevertheless, this is just a website for testing my skill</p>
+                        <span></span>
+                        <div>
+                            <h4>Laptop, decktop and smart phone</h4>
+                            <p>Photographer-intern 2020-2021</p>
+                        </div>
+                        <div>
+                            <h4>Photo Agency Shutter</h4>
+                            <p>Photographer-intern 2020-2021</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="teammate">
+                <h3>My Team Showcase</h3>
+                <div class="teammate-content">
+                    <div>
+                        <img src="celeb_donald.jpeg" alt="" />
+                        <h4>Celeb Donald</h4>
+                        <p>Web Developer</p>
+                    </div>
+                    
+                    <div class="content-item center">
+                        <img src="ibrahim_mustapha_2.jpeg" alt="" />
+                        <h4>Ibrahim Mustapha</h4>
+                        <p>Graphic Designer</p>
+                    </div>
+                    
+                    <div class="content-item">
+                        <img src="kelvin_john_1.jpeg" alt="" />
+                        <h4>Kelvin John</h4>
+                        <p>Social Media Manager</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="blog">
+                <h3>Recent Blog</h3>
+                <div class="blog-content">
+                    <div>
+                        <img src="motivation.jpeg" alt="" />
+                        <h4>Ways To Motivate Yourself</h4>
+                        <p>Jehoval is your name, jehoval is your name, mighty warrior, great in battle, jehoval is your name.</p>
+                    </div>
+                    
+                    <div class="center">
+                        <img src="wordpress_theme.jpeg" alt="" />
+                        <h4>Create A Wordpress Theme</h4>
+                        <p>jesus, jesus, jesus, yahweh, yahweh, yahweh, elohim, adonai, yahweh, yahweh.</p>
+                    </div>
+                    
+                    <div>
+                        <img src="top_graphic.jpeg" alt="" />
+                        <h4>Top Graphic Design Topic</h4>
+                        <p>Run to the lord oh ye who are worry, and you will fine rest.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact">
+                <h3>Get In Touch</h3>
+                <div class="contact-content">
+                    <div class="contact_info">
+                        <h5>EMAIL</h5>
+                        <div>
+                            <p>johnmark25@gmail.com</p>
+                            </div>
+                            
+                            <h5>CALL US</h5>
+                            <div>
+                                <p>+23 97657865</p>
+                                <p>+23 65476589</p>
+                            </div>
+                            
+                            <h5>ADDRESS</h5>
+                            <div>
+                               <p> No:32 mark estate, ceir, USA.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <div class="input">
+                                <input type="text" name="" id="" value="" placeholder="Name" />
+                                <input type="email" name="" id="" value="" placeholder="Email"/>
+                                <input type="number" name="" id="" value="" placeholder="Phone"/>
+                            </div>
+                            <textarea name="" id= rows="8" cols="40" placeholder="Message"></textarea>
+                            <button class="submit">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href=""><img src="facebook.png" alt="" /></a>
+                    <a href=""><img src="whatsapp.png" alt="" /></a>
+                    <a href=""><img src="instagram.png" alt="" /></a>
+                </div>
+            </section>
+            
+            <script src="portfolio.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
